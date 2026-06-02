@@ -16,6 +16,18 @@ individual subfolders.
 For a complete setup tutorial, including Anaconda, Python packages, Spyder,
 JupyterLab, and GNU Octave, see [`INSTALLATION.md`](INSTALLATION.md).
 
+## Associated Paper
+
+This repository is intended to accompany a research paper on Horner neural
+networks. The final paper reference will be added manually:
+
+```text
+TODO: add paper title, authors, venue/year, and link or DOI.
+```
+
+If you use this code, please cite the associated paper once the final reference
+is available.
+
 ## Project Structure
 
 | Folder | Purpose |

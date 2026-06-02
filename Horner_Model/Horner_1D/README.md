@@ -14,6 +14,16 @@ initial conditions: built directly into the model forward pass
 training loss: ODE residual only
 ```
 
+## Associated Paper
+
+This folder contains the 1D Horner-network examples that accompany the
+associated research paper on Horner neural networks. The final paper reference
+will be added manually:
+
+```text
+TODO: add paper title, authors, venue/year, and link or DOI.
+```
+
 ## Files
 
 | File | Purpose |

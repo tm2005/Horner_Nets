@@ -10,6 +10,16 @@ uses space and time as inputs:
 
 PyTorch autograd is used to compute the derivatives needed in the PDE residual.
 
+## Associated Paper
+
+This folder contains the 2D Horner-network heat-equation example that
+accompanies the associated research paper on Horner neural networks. The final
+paper reference will be added manually:
+
+```text
+TODO: add paper title, authors, venue/year, and link or DOI.
+```
+
 ## Files
 
 | File | Purpose |
