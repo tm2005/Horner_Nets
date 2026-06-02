@@ -122,37 +122,3 @@ Install them with:
 python3 -m pip install numpy matplotlib
 ```
 
-## Running
-
-Run the scripts from this folder:
-
-```bash
-python3 ODE_order1_ex1.py
-python3 ODE_order1_ex2.py
-python3 ODE_order2.py
-```
-
-Each script prints the polynomial coefficients and the RMSE error, then opens
-the plots.
-
-## Useful Options
-
-Use a seed to make the random collocation points repeatable:
-
-```bash
-python3 ODE_order1_ex1.py --seed 0
-```
-
-Create figures without opening a plot window:
-
-```bash
-python3 ODE_order1_ex1.py --seed 0 --no-show
-```
-
-Save figures as PNG files:
-
-```bash
-python3 ODE_order1_ex1.py --seed 0 --save-dir figures
-```
-
-The same options work for all three main scripts.
