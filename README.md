@@ -1,7 +1,7 @@
 # ODE/PDE Poly
 
-This repository contains examples for approximating
-solutions of ordinary differential equations (ODEs) and one partial
+This repository contains examples for approximating solutions of 
+ordinary differential equations (ODEs) and one partial
 differential equation (PDE). The examples compare several approaches:
 
 - neural networks as implicit representations of the function `y(t)`,
@@ -131,85 +131,18 @@ For the neural-network and Horner PyTorch examples, the required packages are:
 - `torch`
 - `numpy`
 - `matplotlib`
+- `pykan`
 
 If `MODEL_NAME = "kan"` is used in `Comparison/`, the additional Python package
 `kan` must be installed. For `"leaky_relu"`, `"sigmoid"`, and `"siren"`, this
-package is not required.
+package is not required. 
 
 The MATLAB scripts can be run in MATLAB or a compatible Octave environment.
 
-## Running
-
-Run the INR comparison examples:
-
-```bash
-cd Comparison
-python 1order_1.py
-python 1order_2.py
-python 2order.py
-```
-
-Run the 1D Horner examples:
-
-```bash
-cd Horner_Model/Horner_1D
-python our_1order_1.py
-python our_1order_2.py
-python our_2order.py
-```
-
-Run the 2D Horner PDE example:
-
-```bash
-cd Horner_Model/Horner_2D
-python train_2ndorder_heat_prz.py
-```
-
-Run the Python polynomial-regression examples:
-
-```bash
-cd Regression_Python
-python3 ODE_order1_ex1.py --seed 0
-python3 ODE_order1_ex2.py --seed 0
-python3 ODE_order2.py --seed 0
-```
-
-To check the numerical output without opening plot windows:
-
-```bash
-python3 ODE_order1_ex1.py --seed 0 --no-show
-```
-
-Run the MATLAB/Octave regression examples:
-
-```matlab
-cd Regression_MATLAB
-ODE_order1_ex1
-ODE_order1_ex2
-ODE_order2
-```
-
-## Typical Workflow
-
-1. Choose the folder and script that match the equation.
-2. Check the configuration block near the top of the script.
-3. Adjust the number of collocation points, polynomial order, number of epochs,
-   or model type if needed.
-4. Run the script from its own folder.
-5. Compare the printed loss, RMSE, initial-condition error, and plots.
-
-For fair model comparisons, do not compare only the formal polynomial order or
-network width. Also compare the actual number of trainable parameters.
 
 ## Notes
 
 - `Comparison/model/` contains existing KAN cache/checkpoint output. It is not
   the main source module.
-- The PyTorch scripts set `MPLCONFIGDIR` to `/tmp/matplotlib`, which helps in
-  restricted environments where Matplotlib cannot write to the user home
-  directory.
-- Most scripts display Matplotlib figures. In a terminal without a GUI, a
-  warning about non-interactive figures may appear; this is not necessarily a
-  numerical error.
 - More detailed descriptions of each equation, configuration, and output are
   available in the README file of the corresponding subfolder.
