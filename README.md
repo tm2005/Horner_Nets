@@ -1,6 +1,6 @@
 # ODE/PDE Poly
 
-This repository contains small educational examples for approximating
+This repository contains examples for approximating
 solutions of ordinary differential equations (ODEs) and one partial
 differential equation (PDE). The examples compare several approaches:
 
@@ -12,9 +12,6 @@ differential equation (PDE). The examples compare several approaches:
 This root README gives a high-level overview of the whole project. More
 detailed explanations are available in the `README.md` files inside the
 individual subfolders.
-
-For a complete setup tutorial, including Anaconda, Python packages, Spyder,
-JupyterLab, and GNU Octave, see [`INSTALLATION.md`](INSTALLATION.md).
 
 ## Associated Paper
 
