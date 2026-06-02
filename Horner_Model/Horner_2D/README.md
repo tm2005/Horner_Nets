@@ -17,7 +17,7 @@ accompanies the associated research paper on Horner neural networks. The final
 paper reference will be added manually:
 
 ```text
-TODO: add paper title, authors, venue/year, and link or DOI.
+T. Matulić, D. Seršić, "Parameter-Minimal Neural DE Solvers via Horner Polynomials", https://arxiv.org/abs/2602.14737 (Under review)
 ```
 
 ## Files
