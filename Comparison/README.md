@@ -143,27 +143,6 @@ These are soft initial conditions. The model is penalized when the initial
 condition is wrong, but the condition is not enforced exactly by the
 architecture.
 
-## Running
-
-Run any solver directly:
-
-```bash
-python 1order_1.py
-python 1order_2.py
-python 2order.py
-```
-
-Each script prints:
-
-- selected model name,
-- ODE being solved,
-- LBFGS loss after each epoch,
-- number of trainable parameters,
-- RMSE against the exact solution,
-- final value at the initial point.
-
-`2order.py` also prints the final derivative at the initial point.
-
 ## What Each Script Computes
 
 `1order_1.py` solves:
@@ -187,14 +166,3 @@ y'' + 2y' + y = sin(t),    y(0) = 0,    y'(0) = 0
 exact: y(t) = 0.5 * (exp(-t) + t * exp(-t) - cos(t))
 ```
 
-## Typical Workflow
-
-1. Choose the ODE script.
-2. Set `MODEL_NAME`.
-3. Adjust the parameters for the chosen architecture if needed.
-4. Run the script.
-5. Compare loss, RMSE, initial-condition error, and plots.
-6. Switch `MODEL_NAME` and repeat with the same ODE.
-
-This keeps the comparison focused: the ODE, optimizer, collocation points, and
-evaluation procedure stay fixed while only the network architecture changes.
