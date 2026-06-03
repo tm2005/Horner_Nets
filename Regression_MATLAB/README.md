@@ -20,16 +20,6 @@ P'(t) = c1 + c2*t/1! + c3*t^2/2! + ...
 This is useful because the ODE can be written as a linear system for the
 unknown polynomial coefficients.
 
-## Associated Paper
-
-This folder contains MATLAB/Octave polynomial-regression reference examples
-used as supporting material for the associated paper on Horner neural networks.
-The final paper reference will be added manually:
-
-```text
-TODO: add paper title, authors, venue/year, and link or DOI.
-```
-
 ## Files
 
 ### `ODE_order1_ex1.m`
