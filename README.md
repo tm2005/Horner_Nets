@@ -31,6 +31,7 @@ is available.
 | --- | --- |
 | `Comparison/` | Comparison of standard INR models for 1D ODE examples. Supported models are sigmoid MLP, LeakyReLU MLP, SIREN, and optional KAN. |
 | `Horner_Model/Horner_1D/` | 1D Horner-polynomial models for ODE examples with hard initial conditions. |
+| `Horner_Model/Horner_1D_Spline/` | Piecewise 1D Horner-spline versions of the same ODE examples, with interval-wise Horner models and hard continuity propagation. |
 | `Horner_Model/Horner_2D/` | 2D Horner model for the heat equation `y_t - 0.1*y_xx = 0`. |
 | `Regression_MATLAB/` | MATLAB/Octave polynomial regression for the same ODE test problems. |
 | `Regression_Python/` | Python polynomial-regression version of the same ODE test problems. |
@@ -81,6 +82,29 @@ Scripts:
 
 The models are defined in `Model_Horner.py`, and helper functions for
 derivatives and parameter counting are defined in `My_Fncs.py`.
+
+### Horner 1D Spline Models
+
+The `Horner_Model/Horner_1D_Spline/` folder solves the same three 1D ODE
+examples as `Horner_Model/Horner_1D/`, but uses a piecewise spline paradigm.
+The physical domain is split into intervals, and each interval has its own
+hard-IC Horner polynomial.
+
+For first-order ODEs, `HornerSplineIC1` propagates the value at the right edge
+of one interval to the left edge of the next interval. This gives hard `C0`
+continuity across internal breakpoints. For the second-order ODE,
+`HornerSplineIC2` propagates both value and first derivative, giving hard `C1`
+continuity.
+
+Scripts:
+
+- `our_1order_1.py`: nonlinear ODE `y*y' = t`
+- `our_1order_2.py`: linear ODE `y' + 2y = 1`
+- `our_2order.py`: linear second-order ODE
+
+The spline wrappers are defined in `Model_Horner_Spline.py`. Shared helpers for
+autograd derivatives, interval selection, piecewise evaluation, RMSE, and
+parameter counting are defined in `My_Fncs.py`.
 
 ### Horner 2D Model
 
