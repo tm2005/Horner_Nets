@@ -11,16 +11,6 @@ t  ->  neural network  ->  y(t)
 PyTorch autograd then computes the derivatives needed in the ODE residual,
 for example `y'(t)` or `y''(t)`.
 
-## Associated Paper
-
-This folder contains comparison neural-network baselines used alongside the
-Horner-network experiments in the associated paper. The final paper reference
-will be added manually:
-
-```text
-TODO: add paper title, authors, venue/year, and link or DOI.
-```
-
 ## Files
 
 | File | Role |
