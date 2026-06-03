@@ -36,9 +36,6 @@ is available.
 | `Regression_MATLAB/` | MATLAB/Octave polynomial regression for the same ODE test problems. |
 | `Regression_Python/` | Python polynomial-regression version of the same ODE test problems. |
 
-Technical folders such as `__pycache__/`, `.spyproject/`, `.git/`, `.codex/`,
-and `.agents/` are not part of the numerical source code.
-
 ## Main Ideas
 
 ### Neural ODE Examples
