@@ -16,16 +16,6 @@ derivative shifts the coefficient index:
 P'(t) = c1 + c2*t/1! + c3*t^2/2! + ...
 ```
 
-## Associated Paper
-
-This folder contains Python polynomial-regression reference examples used as
-supporting material for the associated paper on Horner neural networks. The
-final paper reference will be added manually:
-
-```text
-TODO: add paper title, authors, venue/year, and link or DOI.
-```
-
 ## Files
 
 ### `ODE_order1_ex1.py`
